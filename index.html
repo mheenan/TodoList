@@ -6,6 +6,30 @@
   </head>
   <body>
     <h1>This is my awesome ToDo List!</h1>
-    <script src="ToDoListV4.js"></script>
+
+    <div>
+      <button onclick="handlers.toggleAll()" >Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick="handlers.addTodo()">Add</button>
+      <input id="addTodoTextInput" type="text">
+    </div>
+
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input id="changeTodoPositionInput" type="number">
+      <input id="changeTodoTextInput" type="text">
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Complete</button>
+      <input id="toggleCompletedPositionInput" type="number">
+    </div>
+
+    <ul>
+    </ul>
+
+    <script src="ToDoListV6.js"></script>
   </body>
 </html>
